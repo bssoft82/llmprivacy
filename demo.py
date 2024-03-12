@@ -18,7 +18,7 @@ if __name__ == "__main__":
     data_idx = 23
 
     ### Environment setup
-    cfg = read_config_from_yaml("configs/reddit/running/reddit_synthetic_gpt4.yaml")
+    cfg = read_config_from_yaml("configs/reddit/running/reddit_synthetic_gpt3.5.yaml")
 
     seed_everything(cfg.seed)
     # If using OpenAI API or other external services -> Fill in fields in credentials.py (and exclude from GIT!!!)
@@ -40,10 +40,12 @@ if __name__ == "__main__":
 
     print(prompt)
 
-    results = model.predict_multi([prompt], max_workers=max_workers, timeout=timeout)
+    #results = model.predict_multi([prompt], max_workers=max_workers, timeout=timeout)
+    results = model.predict(prompt, max_workers=max_workers, timeout=timeout)
 
     print("=============\nAnswer\n=============\n")
+    print (results)
 
-    for res in results:
-        # Answer
-        print(res[1])
+    # for res in results:
+    #     # Answer
+    #     print(res[1])
