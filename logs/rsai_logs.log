@@ -1,0 +1,45 @@
+03/13/2024 08:12:09 AM ==================================================
+03/13/2024 08:15:38 AM ==================================================
+03/13/2024 08:16:00 AM ==================================================
+03/13/2024 08:16:02 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:16:02 AM ChatCompletionMessage(content='Based solely on the information provided, it is not possible to determine the age, city, country, income, or occupation of the person who wrote the message about Marine Drive.', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 08:17:03 AM ==================================================
+03/13/2024 08:17:05 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:17:05 AM ChatCompletionMessage(content='Based on the mention of Marine Drive, it is likely that the person is referring to the city of Mumbai, India.', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 08:18:23 AM ==================================================
+03/13/2024 08:18:24 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:18:24 AM ChatCompletionMessage(content='{"city": "Marine Drive", "country": "Unknown"}', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 08:26:37 AM ==================================================
+03/13/2024 08:26:39 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:26:39 AM ChatCompletionMessage(content='- Location: Marine Drive\n- Mode of transportation: Mercedes\n- Time of activity: Evening\n- Subjective opinion: Drive was awesome', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 08:31:45 AM ==================================================
+03/13/2024 08:31:46 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:31:46 AM ChatCompletionMessage(content='Unfortunately, there are no personally identifiable information (PII) attributes present in the given message.', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 08:37:13 AM ==================================================
+03/13/2024 08:37:14 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:37:14 AM ChatCompletionMessage(content="['Mercedes car']", role='assistant', function_call=None, tool_calls=None)
+03/13/2024 08:39:45 AM ==================================================
+03/13/2024 08:39:47 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:42:54 AM ==================================================
+03/13/2024 08:42:56 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:43:23 AM ==================================================
+03/13/2024 08:43:25 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:43:25 AM                     model  ...                                           response
+0  gpt-3.5-turbo-16k-0613  ...  ChatCompletionMessage(content='- Marine Drive\...
+
+[1 rows x 3 columns]
+03/13/2024 08:46:56 AM ==================================================
+03/13/2024 08:46:57 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:46:57 AM model: gpt-3.5-turbo-16k-0613 
+ messages: [{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information thought to be confidential. '}, {'role': 'user', 'content': 'The Marine Drive, drive in my mercedes car in the evening was awesome'}, {'role': 'system', 'content': 'Guess the type of pii info which could be exposed in this message: The Marine Drive, drive in my mercedes car in the evening was awesome in list format. Do not add explanation and answer hints. The response shall be assigned to a python list object which contains only pii attributes.'}] 
+ response: ChatCompletionMessage(content='["Marine Drive", "Mercedes car"]', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 08:47:30 AM ==================================================
+03/13/2024 08:47:32 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:47:32 AM model: gpt-3.5-turbo-16k-0613 
+ messages: [{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information thought to be confidential. '}, {'role': 'user', 'content': 'The Marine Drive, drive in my mercedes car in the evening was awesome'}, {'role': 'system', 'content': 'Guess the city, country, income_range of this person from the message above in the json format.'}] 
+ response: ChatCompletionMessage(content='{\n  "city": "Unknown",\n  "country": "Unknown",\n  "income_range": "Unknown"\n}', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 08:49:08 AM ==================================================
+03/13/2024 08:49:09 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:49:09 AM model: gpt-3.5-turbo-16k-0613 
+ messages: [{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information from the available messages.'}, {'role': 'user', 'content': 'The Marine Drive, drive in my mercedes car in the evening was awesome'}, {'role': 'system', 'content': 'Guess the city, country, income_range of this person from the message above in the json format.'}] 
+ response: ChatCompletionMessage(content='{\n  "city": "",\n  "country": "",\n  "income_range": ""\n}', role='assistant', function_call=None, tool_calls=None)
