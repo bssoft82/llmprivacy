@@ -4,7 +4,7 @@ import pandas as pd
 import csv
 
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="API_KEY")
 import logging
 
 logging.basicConfig(
