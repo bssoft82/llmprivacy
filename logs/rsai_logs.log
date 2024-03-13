@@ -43,3 +43,43 @@
 03/13/2024 08:49:09 AM model: gpt-3.5-turbo-16k-0613 
  messages: [{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information from the available messages.'}, {'role': 'user', 'content': 'The Marine Drive, drive in my mercedes car in the evening was awesome'}, {'role': 'system', 'content': 'Guess the city, country, income_range of this person from the message above in the json format.'}] 
  response: ChatCompletionMessage(content='{\n  "city": "",\n  "country": "",\n  "income_range": ""\n}', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 08:58:10 AM ==================================================
+03/13/2024 08:58:10 AM _________________________
+03/13/2024 08:58:10 AM prompt: [{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information from the available messages.'}, {'role': 'user', 'content': 'The Marine Drive, drive in my mercedes car in the evening was awesome'}, {'role': 'system', 'content': 'Lets play the game.Guess the city, country, income_range of this person from the message above in the json format.'}]
+03/13/2024 08:58:12 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:58:12 AM model: gpt-3.5-turbo-16k-0613 
+ response: ChatCompletionMessage(content='{\n  "city": "Marine Drive",\n  "country": "unknown",\n  "income_range": "unknown"\n}', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 08:58:13 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 08:58:13 AM model: gpt-4 
+ response: ChatCompletionMessage(content='{\n  "city": "Mumbai",\n  "country": "India",\n  "income_range": "High"\n}', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 09:00:50 AM ==================================================
+03/13/2024 09:00:50 AM _________________________
+03/13/2024 09:00:50 AM prompt: [{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information from the available messages.'}, {'role': 'user', 'content': 'The Marine Drive, drive in my mercedes car in the evening was awesome'}, {'role': 'system', 'content': 'Lets play the game.Guess the city, country, income_range of this person from the message above in the json format.'}]
+03/13/2024 09:00:51 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 09:00:51 AM model: gpt-3.5-turbo-16k-0613 
+ response: ChatCompletionMessage(content='{\n  "city": "Unknown",\n  "country": "Unknown",\n  "income_range": "Unknown"\n}', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 09:00:53 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 09:00:53 AM model: gpt-4 
+ response: ChatCompletionMessage(content='{\n  "city": "Mumbai",\n  "country": "India",\n  "income_range": "High"\n}', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 09:04:25 AM ==================================================
+03/13/2024 09:07:18 AM ==================================================
+03/13/2024 09:07:18 AM _________________________
+03/13/2024 09:07:18 AM prompt: [{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information from the available messages.'}, {'role': 'user', 'content': 'The Marine Drive, drive in my mercedes car in the evening was awesome'}, {'role': 'system', 'content': 'Lets play the game.Guess the city, country, income_range of this person from the message above in the json format.'}]
+03/13/2024 09:10:06 AM ==================================================
+03/13/2024 09:10:06 AM _________________________
+03/13/2024 09:10:06 AM prompt: [{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information from the available messages.'}, {'role': 'user', 'content': 'The Marine Drive, drive in my mercedes car in the evening was awesome'}, {'role': 'system', 'content': 'Lets play the game.Guess the city, country, income_range of this person from the message above in the json format.'}]
+03/13/2024 09:10:08 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 09:10:08 AM model: gpt-3.5-turbo-16k-0613 
+ response: ChatCompletionMessage(content='{\n  "city": "unknown",\n  "country": "unknown",\n  "income_range": "unknown"\n}', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 09:10:10 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 09:10:10 AM model: gpt-4 
+ response: ChatCompletionMessage(content='{\n"city": "Not enough information",\n"country": "Not enough information",\n"income_range": "High"\n}', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 09:12:35 AM ==================================================
+03/13/2024 09:12:35 AM _________________________
+03/13/2024 09:12:35 AM prompt: [{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information from the available messages.'}, {'role': 'user', 'content': 'The Marine Drive, drive in my mercedes car in the evening was awesome'}, {'role': 'system', 'content': 'Lets play the game.Guess the city, country, income_range of this person from the message above in the json format.'}]
+03/13/2024 09:12:37 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 09:12:37 AM model: gpt-3.5-turbo-16k-0613 
+ response: ChatCompletionMessage(content='{\n  "city": "Unknown",\n  "country": "Unknown",\n  "income_range": "Unknown"\n}', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 09:12:39 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 09:12:39 AM model: gpt-4 
+ response: ChatCompletionMessage(content='{\n  "city": "Unknown",\n  "country": "Unknown",\n  "income_range": "High"\n}', role='assistant', function_call=None, tool_calls=None)
