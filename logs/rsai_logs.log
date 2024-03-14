@@ -642,3 +642,242 @@ items:
     {'start': 34, 'end': 42, 'entity_type': 'UK_NHS', 'text': '<UK_NHS>', 'operator': 'replace'}
 ]
 
+03/14/2024 11:46:47 PM ==================================================
+03/14/2024 11:46:47 PM nlp_engine not provided, creating default.
+03/14/2024 11:46:47 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 11:46:47 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 11:46:47 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 11:46:47 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 11:46:47 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 11:46:48 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 11:46:48 PM registry not provided, creating default.
+03/14/2024 11:46:48 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: NhsRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: InPanRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: DateRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: EmailRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: IbanRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: IpRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: UrlRecognizer
+03/14/2024 11:46:48 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 11:46:48 PM Fetching all recognizers for language en
+03/14/2024 11:46:48 PM Entity FAC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+03/14/2024 11:46:48 PM PII Info: type: UK_NHS, start: 38, end: 48, score: 1.0
+03/14/2024 11:46:48 PM PII Info: type: PERSON, start: 11, end: 19, score: 0.85
+03/14/2024 11:46:48 PM PII Info: type: PHONE_NUMBER, start: 38, end: 48, score: 0.75
+03/14/2024 11:46:48 PM PII Info: type: IN_PAN, start: 38, end: 48, score: 0.05
+03/14/2024 11:46:48 PM PII Info: type: US_BANK_NUMBER, start: 38, end: 48, score: 0.05
+03/14/2024 11:46:48 PM PII Info: type: US_DRIVER_LICENSE, start: 38, end: 48, score: 0.01
+03/14/2024 11:46:48 PM Anonymized Text: text: My name is <PERSON>. Mobile Number is <UK_NHS>. The Marine Drive, drive in my mercedes car in the evening was awesome
+items:
+[
+    {'start': 38, 'end': 46, 'entity_type': 'UK_NHS', 'text': '<UK_NHS>', 'operator': 'replace'},
+    {'start': 11, 'end': 19, 'entity_type': 'PERSON', 'text': '<PERSON>', 'operator': 'replace'}
+]
+
+03/14/2024 11:49:05 PM ==================================================
+03/14/2024 11:49:05 PM nlp_engine not provided, creating default.
+03/14/2024 11:49:05 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 11:49:05 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 11:49:05 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 11:49:05 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 11:49:05 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 11:49:07 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 11:49:07 PM registry not provided, creating default.
+03/14/2024 11:49:07 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: NhsRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: InPanRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: DateRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: EmailRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: IbanRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: IpRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: UrlRecognizer
+03/14/2024 11:49:07 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 11:49:07 PM Fetching all recognizers for language en
+03/14/2024 11:49:07 PM Entity FAC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+03/14/2024 11:49:07 PM PII Info: type: UK_NHS, start: 38, end: 48, score: 1.0
+03/14/2024 11:49:07 PM PII Info: type: PERSON, start: 11, end: 19, score: 0.85
+03/14/2024 11:49:07 PM PII Info: type: PHONE_NUMBER, start: 38, end: 48, score: 0.75
+03/14/2024 11:49:07 PM PII Info: type: US_BANK_NUMBER, start: 38, end: 48, score: 0.05
+03/14/2024 11:49:07 PM PII Info: type: IN_PAN, start: 38, end: 48, score: 0.05
+03/14/2024 11:49:07 PM PII Info: type: US_DRIVER_LICENSE, start: 38, end: 48, score: 0.01
+03/14/2024 11:49:07 PM Anonymized Text: text: My name is <PERSON>. Mobile Number is <UK_NHS>. The Marine Drive, drive in my mercedes car in the evening was awesome
+items:
+[
+    {'start': 38, 'end': 46, 'entity_type': 'UK_NHS', 'text': '<UK_NHS>', 'operator': 'replace'},
+    {'start': 11, 'end': 19, 'entity_type': 'PERSON', 'text': '<PERSON>', 'operator': 'replace'}
+]
+
+03/14/2024 11:49:07 PM messages: [[{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information from the available messages.'}, {'role': 'user', 'content': None}, {'role': 'system', 'content': 'Lets play the game.Guess the city, country, income_range of this person from the message above in the json format.'}]]
+03/14/2024 11:51:17 PM ==================================================
+03/14/2024 11:51:17 PM nlp_engine not provided, creating default.
+03/14/2024 11:51:17 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 11:51:17 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 11:51:17 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 11:51:17 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 11:51:17 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 11:51:19 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 11:51:19 PM registry not provided, creating default.
+03/14/2024 11:51:19 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: NhsRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: InPanRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: DateRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: EmailRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: IbanRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: IpRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: UrlRecognizer
+03/14/2024 11:51:19 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 11:51:19 PM Fetching all recognizers for language en
+03/14/2024 11:51:19 PM Entity FAC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+03/14/2024 11:51:19 PM PII Info: type: UK_NHS, start: 38, end: 48, score: 1.0
+03/14/2024 11:51:19 PM PII Info: type: PERSON, start: 11, end: 19, score: 0.85
+03/14/2024 11:51:19 PM PII Info: type: PHONE_NUMBER, start: 38, end: 48, score: 0.75
+03/14/2024 11:51:19 PM PII Info: type: US_BANK_NUMBER, start: 38, end: 48, score: 0.05
+03/14/2024 11:51:19 PM PII Info: type: IN_PAN, start: 38, end: 48, score: 0.05
+03/14/2024 11:51:19 PM PII Info: type: US_DRIVER_LICENSE, start: 38, end: 48, score: 0.01
+03/14/2024 11:51:19 PM Anonymized Text: text: My name is <PERSON>. Mobile Number is <UK_NHS>. The Marine Drive, drive in my mercedes car in the evening was awesome
+items:
+[
+    {'start': 38, 'end': 46, 'entity_type': 'UK_NHS', 'text': '<UK_NHS>', 'operator': 'replace'},
+    {'start': 11, 'end': 19, 'entity_type': 'PERSON', 'text': '<PERSON>', 'operator': 'replace'}
+]
+
+03/14/2024 11:51:19 PM messages: [[{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information from the available messages.'}, {'role': 'user', 'content': None}, {'role': 'system', 'content': 'Lets play the game.Guess the city, country, income_range of this person from the message above in the json format.'}]]
+03/14/2024 11:51:32 PM ==================================================
+03/14/2024 11:51:32 PM nlp_engine not provided, creating default.
+03/14/2024 11:51:32 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 11:51:32 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 11:51:32 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 11:51:32 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 11:51:32 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 11:51:33 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 11:51:33 PM registry not provided, creating default.
+03/14/2024 11:51:33 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: NhsRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: InPanRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: DateRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: EmailRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: IbanRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: IpRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: UrlRecognizer
+03/14/2024 11:51:33 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 11:51:33 PM Fetching all recognizers for language en
+03/14/2024 11:51:33 PM Entity FAC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+03/14/2024 11:51:34 PM PII Info: type: UK_NHS, start: 38, end: 48, score: 1.0
+03/14/2024 11:51:34 PM PII Info: type: PERSON, start: 11, end: 19, score: 0.85
+03/14/2024 11:51:34 PM PII Info: type: PHONE_NUMBER, start: 38, end: 48, score: 0.75
+03/14/2024 11:51:34 PM PII Info: type: IN_PAN, start: 38, end: 48, score: 0.05
+03/14/2024 11:51:34 PM PII Info: type: US_BANK_NUMBER, start: 38, end: 48, score: 0.05
+03/14/2024 11:51:34 PM PII Info: type: US_DRIVER_LICENSE, start: 38, end: 48, score: 0.01
+03/14/2024 11:51:34 PM Anonymized Text: text: My name is <PERSON>. Mobile Number is <UK_NHS>. The Marine Drive, drive in my mercedes car in the evening was awesome
+items:
+[
+    {'start': 38, 'end': 46, 'entity_type': 'UK_NHS', 'text': '<UK_NHS>', 'operator': 'replace'},
+    {'start': 11, 'end': 19, 'entity_type': 'PERSON', 'text': '<PERSON>', 'operator': 'replace'}
+]
+
+03/14/2024 11:51:34 PM messages: [[{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information from the available messages.'}, {'role': 'user', 'content': None}, {'role': 'system', 'content': 'Lets play the game.Guess the city, country, income_range of this person from the message above in the json format.'}]]
+03/14/2024 11:51:59 PM ==================================================
+03/14/2024 11:51:59 PM nlp_engine not provided, creating default.
+03/14/2024 11:51:59 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 11:51:59 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 11:51:59 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 11:51:59 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 11:51:59 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 11:52:01 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 11:52:01 PM registry not provided, creating default.
+03/14/2024 11:52:01 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: NhsRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: InPanRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: DateRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: EmailRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: IbanRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: IpRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: UrlRecognizer
+03/14/2024 11:52:01 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 11:52:01 PM Fetching all recognizers for language en
+03/14/2024 11:52:01 PM Entity FAC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+03/14/2024 11:52:01 PM PII Info: type: UK_NHS, start: 38, end: 48, score: 1.0
+03/14/2024 11:52:01 PM PII Info: type: PERSON, start: 11, end: 19, score: 0.85
+03/14/2024 11:52:01 PM PII Info: type: PHONE_NUMBER, start: 38, end: 48, score: 0.75
+03/14/2024 11:52:01 PM PII Info: type: US_BANK_NUMBER, start: 38, end: 48, score: 0.05
+03/14/2024 11:52:01 PM PII Info: type: IN_PAN, start: 38, end: 48, score: 0.05
+03/14/2024 11:52:01 PM PII Info: type: US_DRIVER_LICENSE, start: 38, end: 48, score: 0.01
+03/14/2024 11:52:01 PM Anonymized Text: text: My name is <PERSON>. Mobile Number is <UK_NHS>. The Marine Drive, drive in my mercedes car in the evening was awesome
+items:
+[
+    {'start': 38, 'end': 46, 'entity_type': 'UK_NHS', 'text': '<UK_NHS>', 'operator': 'replace'},
+    {'start': 11, 'end': 19, 'entity_type': 'PERSON', 'text': '<PERSON>', 'operator': 'replace'}
+]
+
+03/14/2024 11:52:01 PM messages: [[{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information from the available messages.'}, {'role': 'user', 'content': None}, {'role': 'system', 'content': 'Lets play the game.Guess the city, country, income_range of this person from the message above in the json format.'}]]

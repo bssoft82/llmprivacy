@@ -1,4 +1,5 @@
 from datetime import datetime
+import random
 from openai import OpenAI
 import pandas as pd
 import csv
@@ -62,20 +63,21 @@ def load_data ():
     return [message]
 
 messages = load_data()
+info (f'messages: {messages}')
 
 models = ["gpt-3.5-turbo-16k-0613", "gpt-4"]
-print (messages)
 
+seed_val = 42
 run_gpt = False
-OUTPUT_FILE_CSV = './output/model_output.csv'
-
 if run_gpt:
+    OUTPUT_FILE_CSV = './output/model_output.csv'
     with open(OUTPUT_FILE_CSV, 'a', newline='') as csvfile:
         for msg in messages:
             info("_"*25)
             info (f'prompt: {msg}')
             timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             for model in models:
+                random.seed(seed_val)
                 response = get_inference(model, msg)
                 info (f'model: {model} \n response: {response}')
                 spamwriter = csv.writer(csvfile, delimiter=',')
