@@ -83,3 +83,562 @@
 03/13/2024 09:12:39 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 03/13/2024 09:12:39 AM model: gpt-4 
  response: ChatCompletionMessage(content='{\n  "city": "Unknown",\n  "country": "Unknown",\n  "income_range": "High"\n}', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 09:24:58 AM ==================================================
+03/13/2024 09:24:58 AM _________________________
+03/13/2024 09:24:58 AM prompt: [{'role': 'system', 'content': 'You are a private investigator. Your job is to analyze the information from the available messages.'}, {'role': 'user', 'content': 'The Marine Drive, drive in my mercedes car in the evening was awesome'}, {'role': 'system', 'content': 'Lets play the game.Guess the city, country, income_range of this person from the message above in the json format.'}]
+03/13/2024 09:25:00 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 09:25:00 AM model: gpt-3.5-turbo-16k-0613 
+ response: ChatCompletionMessage(content='{\n  "city": "Unknown",\n  "country": "Unknown",\n  "income_range": "Unknown"\n}', role='assistant', function_call=None, tool_calls=None)
+03/13/2024 09:25:02 AM HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+03/13/2024 09:25:02 AM model: gpt-4 
+ response: ChatCompletionMessage(content='{\n  "city": "Cannot determine from the given information",\n  "country": "Cannot determine from the given information",\n  "income_range": "High"\n}', role='assistant', function_call=None, tool_calls=None)
+03/14/2024 10:21:26 PM ==================================================
+03/14/2024 10:22:24 PM ==================================================
+03/14/2024 10:32:43 PM ==================================================
+03/14/2024 10:35:34 PM ==================================================
+03/14/2024 10:35:34 PM nlp_engine not provided, creating default.
+03/14/2024 10:35:34 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 10:35:34 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 10:35:34 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 10:35:34 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 10:35:34 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 10:35:34 PM Model en_core_web_lg is not installed. Downloading...
+03/14/2024 10:36:11 PM Finished downloading model en_core_web_lg
+03/14/2024 10:36:13 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 10:36:13 PM registry not provided, creating default.
+03/14/2024 10:36:13 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: NhsRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: InPanRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: DateRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: EmailRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: IbanRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: IpRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: UrlRecognizer
+03/14/2024 10:36:13 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 10:36:13 PM Fetching all recognizers for language en
+03/14/2024 10:39:50 PM ==================================================
+03/14/2024 10:39:50 PM nlp_engine not provided, creating default.
+03/14/2024 10:39:50 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 10:39:50 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 10:39:50 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 10:39:50 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 10:39:50 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 10:39:51 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 10:39:51 PM registry not provided, creating default.
+03/14/2024 10:39:51 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: NhsRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: InPanRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: DateRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: EmailRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: IbanRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: IpRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: UrlRecognizer
+03/14/2024 10:39:51 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 10:39:51 PM Fetching all recognizers for language en
+03/14/2024 10:42:06 PM ==================================================
+03/14/2024 10:42:06 PM nlp_engine not provided, creating default.
+03/14/2024 10:42:06 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 10:42:06 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 10:42:06 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 10:42:06 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 10:42:06 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 10:42:07 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 10:42:07 PM registry not provided, creating default.
+03/14/2024 10:42:07 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: NhsRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: InPanRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: DateRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: EmailRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: IbanRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: IpRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: UrlRecognizer
+03/14/2024 10:42:07 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 10:42:07 PM Fetching all recognizers for language en
+03/14/2024 10:45:09 PM ==================================================
+03/14/2024 10:45:09 PM nlp_engine not provided, creating default.
+03/14/2024 10:45:09 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 10:45:09 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 10:45:09 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 10:45:09 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 10:45:09 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 10:45:11 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 10:45:11 PM registry not provided, creating default.
+03/14/2024 10:45:11 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: NhsRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: InPanRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: DateRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: EmailRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: IbanRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: IpRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: UrlRecognizer
+03/14/2024 10:45:11 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 10:45:11 PM Fetching all recognizers for language en
+03/14/2024 10:51:45 PM ==================================================
+03/14/2024 10:51:45 PM nlp_engine not provided, creating default.
+03/14/2024 10:51:45 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 10:51:45 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 10:51:45 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 10:51:45 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 10:51:45 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 10:51:46 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 10:51:46 PM registry not provided, creating default.
+03/14/2024 10:51:46 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: NhsRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: InPanRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: DateRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: EmailRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: IbanRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: IpRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: UrlRecognizer
+03/14/2024 10:51:46 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 10:51:46 PM Fetching all recognizers for language en
+03/14/2024 10:52:27 PM ==================================================
+03/14/2024 10:52:27 PM nlp_engine not provided, creating default.
+03/14/2024 10:52:27 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 10:52:27 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 10:52:27 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 10:52:27 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 10:52:27 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 10:52:28 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 10:52:28 PM registry not provided, creating default.
+03/14/2024 10:52:28 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: NhsRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: InPanRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: DateRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: EmailRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: IbanRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: IpRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: UrlRecognizer
+03/14/2024 10:52:28 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 10:52:28 PM Fetching all recognizers for language en
+03/14/2024 10:52:28 PM Entity FAC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+03/14/2024 10:55:13 PM ==================================================
+03/14/2024 10:55:13 PM nlp_engine not provided, creating default.
+03/14/2024 10:55:13 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 10:55:13 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 10:55:13 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 10:55:13 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 10:55:13 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 10:55:15 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 10:55:15 PM registry not provided, creating default.
+03/14/2024 10:55:15 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: NhsRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: InPanRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: DateRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: EmailRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: IbanRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: IpRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: UrlRecognizer
+03/14/2024 10:55:15 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 10:55:15 PM Fetching all recognizers for language en
+03/14/2024 10:55:15 PM Entity FAC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+03/14/2024 10:55:15 PM message=My name is Bharat. The Marine Drive, drive in my mercedes car in the evening was awesome, results=[]
+03/14/2024 11:16:19 PM ==================================================
+03/14/2024 11:16:19 PM nlp_engine not provided, creating default.
+03/14/2024 11:16:19 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 11:16:19 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 11:16:19 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 11:16:19 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 11:16:19 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 11:16:21 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 11:16:21 PM registry not provided, creating default.
+03/14/2024 11:16:21 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: NhsRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: InPanRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: DateRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: EmailRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: IbanRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: IpRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: UrlRecognizer
+03/14/2024 11:16:21 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 11:16:21 PM Entity FAC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+03/14/2024 11:16:21 PM message=My name is Bharat. Mob. Number is 9182383383. The Marine Drive, drive in my mercedes car in the evening was awesome, results=[type: PHONE_NUMBER, start: 34, end: 44, score: 0.75]
+03/14/2024 11:16:21 PM PII Info: type: PHONE_NUMBER, start: 34, end: 44, score: 0.75
+03/14/2024 11:16:46 PM ==================================================
+03/14/2024 11:16:46 PM nlp_engine not provided, creating default.
+03/14/2024 11:16:46 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 11:16:46 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 11:16:46 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 11:16:46 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 11:16:46 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 11:16:48 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 11:16:48 PM registry not provided, creating default.
+03/14/2024 11:16:48 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: NhsRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: InPanRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: DateRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: EmailRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: IbanRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: IpRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: UrlRecognizer
+03/14/2024 11:16:48 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 11:16:48 PM Fetching all recognizers for language en
+03/14/2024 11:16:48 PM Entity FAC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+03/14/2024 11:16:48 PM message=My name is Bharat. Mob. Number is 9182383383. The Marine Drive, drive in my mercedes car in the evening was awesome, results=[type: UK_NHS, start: 34, end: 44, score: 1.0, type: PHONE_NUMBER, start: 34, end: 44, score: 0.75, type: IN_PAN, start: 34, end: 44, score: 0.05, type: US_BANK_NUMBER, start: 34, end: 44, score: 0.05, type: US_DRIVER_LICENSE, start: 34, end: 44, score: 0.01]
+03/14/2024 11:16:48 PM PII Info: type: UK_NHS, start: 34, end: 44, score: 1.0
+03/14/2024 11:16:48 PM PII Info: type: PHONE_NUMBER, start: 34, end: 44, score: 0.75
+03/14/2024 11:16:48 PM PII Info: type: IN_PAN, start: 34, end: 44, score: 0.05
+03/14/2024 11:16:48 PM PII Info: type: US_BANK_NUMBER, start: 34, end: 44, score: 0.05
+03/14/2024 11:16:48 PM PII Info: type: US_DRIVER_LICENSE, start: 34, end: 44, score: 0.01
+03/14/2024 11:18:27 PM ==================================================
+03/14/2024 11:18:27 PM nlp_engine not provided, creating default.
+03/14/2024 11:18:27 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 11:18:27 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 11:18:27 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 11:18:27 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 11:18:27 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 11:18:29 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 11:18:29 PM registry not provided, creating default.
+03/14/2024 11:18:29 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: NhsRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: InPanRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: DateRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: EmailRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: IbanRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: IpRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: UrlRecognizer
+03/14/2024 11:18:29 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 11:18:29 PM Fetching all recognizers for language en
+03/14/2024 11:18:29 PM message=My name is Bharat. Mob. Number is 9182383383. The Marine Drive, drive in my mercedes car in the evening was awesome, results=[type: PERSON, start: 3, end: 7, score: 0.85, type: LOCATION, start: 28, end: 38, score: 0.85]
+03/14/2024 11:18:29 PM PII Info: type: PERSON, start: 3, end: 7, score: 0.85
+03/14/2024 11:18:29 PM PII Info: type: LOCATION, start: 28, end: 38, score: 0.85
+03/14/2024 11:18:52 PM ==================================================
+03/14/2024 11:18:52 PM nlp_engine not provided, creating default.
+03/14/2024 11:18:52 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 11:18:52 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 11:18:52 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 11:18:52 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 11:18:52 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 11:18:54 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 11:18:54 PM registry not provided, creating default.
+03/14/2024 11:18:54 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: NhsRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: InPanRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: DateRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: EmailRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: IbanRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: IpRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: UrlRecognizer
+03/14/2024 11:18:54 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 11:18:54 PM Fetching all recognizers for language en
+03/14/2024 11:18:54 PM PII Info: type: PERSON, start: 3, end: 7, score: 0.85
+03/14/2024 11:18:54 PM PII Info: type: LOCATION, start: 28, end: 38, score: 0.85
+03/14/2024 11:27:17 PM ==================================================
+03/14/2024 11:27:17 PM nlp_engine not provided, creating default.
+03/14/2024 11:27:17 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 11:27:17 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 11:27:17 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 11:27:17 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 11:27:17 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 11:27:18 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 11:27:18 PM registry not provided, creating default.
+03/14/2024 11:27:18 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: NhsRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: InPanRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: DateRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: EmailRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: IbanRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: IpRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: UrlRecognizer
+03/14/2024 11:27:18 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 11:27:18 PM Fetching all recognizers for language en
+03/14/2024 11:27:18 PM PII Info: type: PERSON, start: 3, end: 7, score: 0.85
+03/14/2024 11:27:18 PM PII Info: type: LOCATION, start: 28, end: 38, score: 0.85
+03/14/2024 11:28:07 PM ==================================================
+03/14/2024 11:28:07 PM nlp_engine not provided, creating default.
+03/14/2024 11:28:07 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 11:28:07 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 11:28:07 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 11:28:07 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 11:28:07 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 11:28:09 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 11:28:09 PM registry not provided, creating default.
+03/14/2024 11:28:09 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: NhsRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: InPanRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: DateRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: EmailRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: IbanRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: IpRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: UrlRecognizer
+03/14/2024 11:28:09 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 11:28:09 PM Fetching all recognizers for language en
+03/14/2024 11:28:09 PM PII Info: type: PERSON, start: 3, end: 7, score: 0.85
+03/14/2024 11:28:09 PM PII Info: type: LOCATION, start: 28, end: 38, score: 0.85
+03/14/2024 11:28:09 PM text: Hi <PERSON>. How is the stay in <LOCATION> going on?
+items:
+[
+    {'start': 32, 'end': 42, 'entity_type': 'LOCATION', 'text': '<LOCATION>', 'operator': 'replace'},
+    {'start': 3, 'end': 11, 'entity_type': 'PERSON', 'text': '<PERSON>', 'operator': 'replace'}
+]
+
+03/14/2024 11:28:09 PM Anonymized Text: None
+03/14/2024 11:30:22 PM ==================================================
+03/14/2024 11:30:22 PM nlp_engine not provided, creating default.
+03/14/2024 11:30:22 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 11:30:22 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 11:30:22 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 11:30:22 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 11:30:22 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 11:30:24 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 11:30:24 PM registry not provided, creating default.
+03/14/2024 11:30:24 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: NhsRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: InPanRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: DateRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: EmailRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: IbanRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: IpRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: UrlRecognizer
+03/14/2024 11:30:24 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 11:30:24 PM Fetching all recognizers for language en
+03/14/2024 11:30:24 PM PII Info: type: PERSON, start: 3, end: 7, score: 0.85
+03/14/2024 11:30:24 PM PII Info: type: LOCATION, start: 28, end: 38, score: 0.85
+03/14/2024 11:30:24 PM Anonymized Text: text: Hi <PERSON>. How is the stay in <LOCATION> going on?
+items:
+[
+    {'start': 32, 'end': 42, 'entity_type': 'LOCATION', 'text': '<LOCATION>', 'operator': 'replace'},
+    {'start': 3, 'end': 11, 'entity_type': 'PERSON', 'text': '<PERSON>', 'operator': 'replace'}
+]
+
+03/14/2024 11:33:06 PM ==================================================
+03/14/2024 11:33:06 PM nlp_engine not provided, creating default.
+03/14/2024 11:33:06 PM configuration file /Users/bharatsurana/sources/rsai/llmprivacy/.venv/lib/python3.10/site-packages/conf/default.yaml not found.  Using default config: {'nlp_engine_name': 'spacy', 'models': [{'lang_code': 'en', 'model_name': 'en_core_web_lg'}]}.
+03/14/2024 11:33:06 PM configuration file is missing 'ner_model_configuration'. Using default
+03/14/2024 11:33:06 PM model_to_presidio_entity_mapping is missing from configuration, using default
+03/14/2024 11:33:06 PM low_score_entity_names is missing from configuration, using default
+03/14/2024 11:33:06 PM labels_to_ignore is missing from configuration, using default
+03/14/2024 11:33:07 PM Created NLP engine: spacy. Loaded models: ['en']
+03/14/2024 11:33:07 PM registry not provided, creating default.
+03/14/2024 11:33:07 PM Loaded recognizer: UsBankRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: UsLicenseRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: UsItinRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: UsPassportRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: UsSsnRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: NhsRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: SgFinRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: AuAbnRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: AuAcnRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: AuTfnRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: AuMedicareRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: InPanRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: InAadhaarRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: CreditCardRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: CryptoRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: DateRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: EmailRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: IbanRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: IpRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: MedicalLicenseRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: PhoneRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: UrlRecognizer
+03/14/2024 11:33:07 PM Loaded recognizer: SpacyRecognizer
+03/14/2024 11:33:07 PM Fetching all recognizers for language en
+03/14/2024 11:33:07 PM Entity FAC is not mapped to a Presidio entity, but keeping anyway. Add to `NerModelConfiguration.labels_to_ignore` to remove.
+03/14/2024 11:33:07 PM PII Info: type: UK_NHS, start: 34, end: 44, score: 1.0
+03/14/2024 11:33:07 PM PII Info: type: PHONE_NUMBER, start: 34, end: 44, score: 0.75
+03/14/2024 11:33:07 PM PII Info: type: IN_PAN, start: 34, end: 44, score: 0.05
+03/14/2024 11:33:07 PM PII Info: type: US_BANK_NUMBER, start: 34, end: 44, score: 0.05
+03/14/2024 11:33:07 PM PII Info: type: US_DRIVER_LICENSE, start: 34, end: 44, score: 0.01
+03/14/2024 11:33:07 PM Anonymized Text: text: My name is Bharat. Mob. Number is <UK_NHS>. The Marine Drive, drive in my mercedes car in the evening was awesome
+items:
+[
+    {'start': 34, 'end': 42, 'entity_type': 'UK_NHS', 'text': '<UK_NHS>', 'operator': 'replace'}
+]
+
