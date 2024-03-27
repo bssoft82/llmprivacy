@@ -18,7 +18,7 @@ if __name__ == "__main__":
     data_idx = 23
 
     ### Environment setup
-    cfg = read_config_from_yaml("configs/reddit/running/reddit_synthetic_gpt4.yaml")
+    cfg = read_config_from_yaml("configs/reddit/running/reddit_synthetic_gpt3.5.yaml")
 
     seed_everything(cfg.seed)
     # If using OpenAI API or other external services -> Fill in fields in credentials.py (and exclude from GIT!!!)
